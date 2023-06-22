@@ -1,27 +1,77 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+html{
+  font-size: 0.5em;
+  
+  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.content{
+  font-size:calc(0.5rem + 1vw) ;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 2em;
+  background:black;
+  color:coral;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.register-form input{
+  background-color: black;
+  border-left: 0px;
+  border-bottom: 3px solid coral;
+  border-right: 0px;
+  border-top: 0px;
+  font-size:large;
+
+  color: rgb(33, 23, 172)
+
+}
+.register-form{
+  color:coral;
+}
+
+ .navbar a{
+  color:white;
+  font-size:large;
+  font-weight:bold;
+}
+
+
+
+
+
+.footer{
+border-bottom-right-radius: 40%;
+
+padding: 2em;
+/* border: 1px solid white; */
+color:white;
+font-weight: bold;
+background-color:rgb(87, 24, 1);
+}
+
+.footer a{
+  color:white
+}
+
+/* Home */
+.home{
+  color:white;
+}
+
+.home .banner{
+ 
+background-image: url("/images/computer.jpeg"); /* The image used */
+height: 500px; 
+background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+background-blend-mode:color-burn;
+
+}
+
+.home .cover{
+  background-color: red;
+  height: 100%;
+  opacity: 0.6;
 }
